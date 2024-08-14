@@ -17,7 +17,8 @@ class Base64Cipher:
 # Ejemplo de uso
 if __name__ == "__main__":
     cipher = Base64Cipher()
-    data = "Hola, este es un mensaje secreto."
+    print("Ingresa un mensaje")
+    data = str(input("Introduce mensaje a cifrar en Base64: "))
     
     # Cifrado
     encrypted_data = cipher.encrypt(data)

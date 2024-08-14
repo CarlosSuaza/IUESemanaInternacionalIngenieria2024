@@ -11,7 +11,7 @@ from domain.usuario.usuariomodel import Usuario
 
 app: FastAPI = FastAPI(
     title = "Web API Flujo Data",
-    description = "IUESRI202401"
+    description = "IUE202402"
 )
 
 #####################################################################################

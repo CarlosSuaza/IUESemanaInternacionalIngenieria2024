@@ -11,6 +11,14 @@ def start():
         reload = True
     )
 
+def start():
+    uvicorn.run(
+        "application.webapiflujodata:app",
+        host = "127.0.0.1",
+        port=8432,
+        reload=True
+    )
+
 def startssl():
     uvicorn.run(
         "application.webapiflujodata:app",
@@ -23,5 +31,5 @@ def startssl():
 
 
 if __name__ == "__main__":
-    #start()
-    startssl()
+    start()
+    #startssl()
